@@ -1,0 +1,36 @@
+{
+  "name": "@innerva/client",
+  "version": "0.1.0",
+  "description": "TypeScript server SDK for the Innerva Grant Protocol v0.1",
+  "license": "Apache-2.0",
+  "homepage": "https://innerva.net/docs/api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redwood-Labs-US/innerva-client-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Redwood-Labs-US/innerva-client-typescript/issues"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "tsc -p tsconfig.json && node --test \"build/test/*.test.js\"",
+    "prepare": "tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
